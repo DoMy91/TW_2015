@@ -39,7 +39,7 @@ function initPage() {
                 $("#containerLR").append(reviewCard);
             }
             $(".rating").rating("refresh");
-            $.getScript("http://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js", function(){
+            $.getScript("js/masonry.js", function(){
                 $('#containerLR').masonry();
             });
             sessionStorage.removeItem("resp");
