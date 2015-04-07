@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
+    <title>ReviewIt</title>
+
+    <script src="js/base.js"></script>
+
+    <!-- Google maps & places -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjmvp-CDUPBMfmfxyJJOM4Y3KNBRSBJfA&region=IT&libraries=places"></script>
+
+    <!-- CSS -->
+    <!-- Star Rating -->
+    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/starRating/star-rating.min.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/base.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/zocial/zocial.css"/>
+    <link rel="stylesheet" href="css/animsition/animsition.min.css">
+
+    <!-- favicon -->
+    <!-- ... -->
+
+    <!-- ie -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js" type="text/javascript"></script>
+    <script src="js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+
+<body class="page-yellow">
+<script src="js/entityList.js"></script>
+<script>
+    $(document).ready(function () {
+        initPage();
+        console.log("entityListReview:"+userID);
+        $("#fbBtn").click(FBconnect);
+        $(".animsition").animsition();
+    });
+</script>
+<div class="animsition">
+    <header class="header">
+        <div class="clearfix pull-right">
+            <ul class="nav pull-left">
+                <li>
+                    <a class="header-logo">
+                        <button class='zocial facebook' id="fbBtn">Log in</button>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav nav-list pull-right">
+                <li>
+                    <a class="menu-toggle" href="#profile">
+                    <span class="avatar avatar-sm"><img alt="alt text for John Smith avatar"
+                                                        src="images/users/avatar-001.jpg" id="userPicture"></span>
+                        <span class="header-close icon icon-close"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="menu menu-right" id="profile">
+        <div class="menu-scroll">
+            <div class="menu-wrap">
+                <div class="menu-top">
+                    <div class="menu-top-img">
+                        <img alt="John Smith" src="images/samples/landscape.jpg">
+                    </div>
+                    <div class="menu-top-info">
+                        <a class="menu-top-user">
+                            <span class="avatar pull-left">
+                                <img alt="alt text for John Smith avatar" src="images/users/avatar-001.jpg"
+                                     id="userPicture2">
+                            </span>
+
+                            <p id="userName">Accedi a Facebook</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html" class="animsition-link"><span class="icon icon-home"></span>Home</a>
+                        </li>
+                        <li>
+                            <a href="leaderboards.html" class="animsition-link"><span class="icon icon-assessment"></span>Classifiche</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<script src="js/facebook.js"></script>
+<div class="content">
+    <div class="content-heading">
+        <div class="container">
+            <h1 class="heading"><a id="headingLogo" href="index.html" class="animsition-link">Review<img src="images/5star.png" width="50">it</a></h1>
+        </div>
+    </div>
+    <div class="content-inner">
+        <div class="container" id="container">
+            <div style="display: none" id="map-canvas3"></div>
+            <div id="summaryCard"></div>
+            <div id="containerLR" class="js-masonry" data-masonry-options='{ "columnWidth": 600, "itemSelector": ".card", "gutter":10, "isFitWidth": true }'></div>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>Domenico Scognamiglio (0124000017) <br> Università degli studi di Napoli Parthenope</p>
+    </div>
+</footer>
+
+<script src="js/effects.js"></script>
+</body>
+</html>
