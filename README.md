@@ -2,6 +2,7 @@
 <strong>Progetto esame di Tecnologie Web A.A. 2015</strong>
 
 Website:https://students.uniparthenope.it/~0124000017
+Documentazione:https://web.uniparthenope.it/sites/default/files/files/Presentazione_2.pdf
 
 ReviewIt è una web-app incentrata sul rilascio/lettura di recensioni e orientata alla competizione fra gli utenti.
 <ul>
